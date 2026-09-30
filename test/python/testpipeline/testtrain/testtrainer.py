@@ -713,6 +713,7 @@ class TestTrainer(unittest.TestCase):
 
         labels = Labels((model, tokenizer), dynamic=False)
         self.assertEqual(labels("cat")[0][0], 1)
+
     def testPack(self):
         """
         Test packing rows into chunks up to maxlength
